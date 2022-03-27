@@ -19,5 +19,11 @@ public class BinarySearchTree {
         tree.insert(node,65);
         tree.insert(node,63);
         tree.insert(node,67);
+
+        System.out.println(" Element present in the tree :: "+ tree.searchNode(node,63));
+        System.out.println();
+        System.out.println("Level order traversal of binary tree is ");
+        tree.inorderTraversal(node);
     }
+
 }

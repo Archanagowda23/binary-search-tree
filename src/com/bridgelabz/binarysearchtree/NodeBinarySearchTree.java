@@ -42,6 +42,15 @@ public class NodeBinarySearchTree {
         }
         return  isPresent;
     }
-
-
+    public void inorderTraversal(Node node) {
+        if (node == null)
+            System.out.println("Tree is empty");
+        else {
+            if (node.left != null)
+                inorderTraversal(node.left);
+            System.out.print(node.data + " ");
+            if (node.right != null)
+                inorderTraversal(node.right);
+        }
+    }
 }
